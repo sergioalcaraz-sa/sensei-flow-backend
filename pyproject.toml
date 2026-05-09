@@ -1,0 +1,33 @@
+[project]
+name = "sensei-flow-ai"
+version = "0.1.0"
+description = "Teacher"
+authors = [
+    {name = "Sergio"}
+]
+license = "None"
+requires-python = "^3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sensei-flow-ai"
+version = "0.1.0"
+description = "Sistema asíncrono de análisis de japonés"
+authors = ["Tu Nombre <tu@email.com>"]
+package-mode = false  # <--- AGREGA O CAMBIA ESTA LÍNEA
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "*"}
+uvicorn = "*"
+pydantic-settings = "*"
+langchain = "*"
+langgraph = "*"
+langchain-groq = "*"
+supabase = "*"
